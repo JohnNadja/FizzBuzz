@@ -15,9 +15,12 @@ class ExplorerController{
         const explorers = Reader.readJsonFile("explorers.json");
         return ExplorerService.getAmountOfExplorersByMission(explorers, mission);
     }
-    
+    static applyValidationInNumber(number){
+        const fizzer = FizzBuzzService.applyValidationInNumber(number);
+        return fizzer;
+    }
 }
-    
+
 
 
 module.exports = ExplorerController;

@@ -15,4 +15,14 @@ describe("Pruebas para ExplorerController.js", () => {
         const TotalExplorers = ExplorerController.getAmountOfExplorersByMission("node");
         expect(TotalExplorers).toBe(10);
     });
+
+    test("4) Getter para saber si es fizz, buzz o fizzbuzz", () => {
+        const FB = ExplorerController.applyValidationInNumber(15);
+        expect(FB).toBe("FIZZBUZZ");
+        const Fizz = ExplorerController.applyValidationInNumber(3);
+        expect(Fizz).toBe("FIZZ");
+        const Buzz = ExplorerController.applyValidationInNumber(10);
+        expect(Buzz).toBe("BUZZ");
+        
+    });
 });
