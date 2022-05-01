@@ -19,4 +19,4 @@ class FizzBuzzService{
 
 }
 
-module.exports = FizzBuzzService
+module.exports = FizzBuzzService;
