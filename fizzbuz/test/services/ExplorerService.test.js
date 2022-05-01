@@ -6,7 +6,4 @@ describe("Unit Tests for ExplorerService Class", () => {
     const explorerInNode = ExplorerService.filterByMission(explorers, "node")
     expect(explorerInNode.length).toBe(1);
   });
-  test('2) Explorers con más ', () => {
-    
-  });
 })
